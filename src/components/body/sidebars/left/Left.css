@@ -1,0 +1,54 @@
+.main_left {
+    display: flex;
+    width: 50vw;
+    height: 76vh;
+    background-image: url(../../../../assets/img/building.jpg);
+    background-position: center;
+    border-right: 1px solid grey;
+    /* margin-left: 0.1vw; */
+}
+
+.main_social {
+    height: 76vh;
+    width: 8vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4 );
+    border-right: 1px solid grey;
+}
+
+.social_icons {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4vh;
+}
+.social_icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 1.3rem;
+    margin-top: 1.5vh;
+    padding: 1.1vh;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.main_header_left {
+    height: 12vh;
+    width: 31.7vw;
+    color: white;
+    margin-top: 3vh;
+    padding-left: 2vw;
+    font-family: 'Nixie One', system-ui;
+    border-left: 6px solid #a78d58;
+}
+
+.empty_aside {
+    height: 76vh;
+    width: 8vw;
+    background-color: rgba(0, 0, 0, 0.6 );
+    border-left: 1px solid gray;
+}

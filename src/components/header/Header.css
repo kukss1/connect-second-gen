@@ -1,0 +1,37 @@
+header {
+    height: 12vh;
+    border-bottom: 1px solid gray;
+    display: flex;
+}
+.empty {
+    width: 8vw;
+    height: 12vh;
+    border-right: 1px solid gray;
+}
+.logo_wrapper {
+    display: flex;
+    align-items: center;
+    width: 34vw;
+    border-right: 1px solid gray;
+
+}
+.logo {
+    width: 200px;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo > img {
+    width: 175px;
+}
+.header_headers {
+    color: gray;
+    font-family: 'Nixie One', system-ui;
+}
+
+.right_header_empty {
+    height: 12vh;
+    width: 34vw;
+}

@@ -1,0 +1,25 @@
+.main_right_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 8vw;
+    height: 76vh;
+    /* border-left: 1px solid grey; */
+}
+
+.main_right_nav a {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    padding-right: 2vh;
+    padding-left: 2vh;
+    transition: 0.3s;
+    font-family: 'Nixie One', system-ui;
+}
+.main_right_nav a:hover {
+    background-color: rgb(167,141,88);
+}

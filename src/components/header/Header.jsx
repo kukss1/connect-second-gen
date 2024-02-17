@@ -1,0 +1,27 @@
+import React from "react";
+import "./Header.css";
+import logo from "../../assets/img/Logo.svg";
+
+const Header = () => {
+  return (
+    <header>
+      <div className="empty"></div>
+      <div className="logo_wrapper">
+        <div className="logo">
+          <img src={logo} alt="Logo" />
+        </div>
+        <div className="header_headers">
+          <h3>Connect Capital</h3>
+          <h3>Invest Group</h3>
+        </div>
+      </div>
+      <div className="empty"></div>
+      <div className="right_header_empty">
+        <div className="header_nav"></div>
+      </div>
+      <div className="empty"></div>
+    </header>
+  );
+};
+
+export default Header;

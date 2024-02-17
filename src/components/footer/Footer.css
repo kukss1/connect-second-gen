@@ -1,0 +1,71 @@
+.footer_wrapper {
+    display: flex;
+    width: 100vw;
+    height: 12vh;
+    border-top: 1px solid grey;
+}
+
+.footer_empty {
+    width: 8vw;
+    height: 12vh;
+    border-right: 1px solid grey;
+}
+
+.footer_body {
+    width: 34vw;
+    height: 12vh;
+    border-right: 1px solid gray;
+    overflow-x: scroll;
+}
+
+.footer_body_second {
+    width: 42vw;
+    height: 12vh;
+    border-right: 1px solid gray;
+}
+
+.about_years {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    overflow-x: scroll;
+    width: 70vw;
+    height: 12vh;
+    overflow-x: scroll;
+}
+
+.year {
+    height: 9vh;
+    width: 18vw;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-top: 1.2vh;
+    margin-bottom: 0.5vh;
+
+}
+
+.year h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-top: 1vh;
+    color: gray;
+}
+
+.year p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.about_years svg {
+    color: white;
+    font-size: 3rem;
+    margin-left: 2vw;
+    margin-right: 2vw;
+
+}

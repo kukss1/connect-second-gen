@@ -1,0 +1,51 @@
+.main_right {
+    display: flex;
+}
+
+.main_right_body {
+    width: 42vw;
+    height: 76vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    border-right: 1px solid grey;
+    margin-left: 0.1vw;
+}
+
+.main_right_title , .main_right_subtitle , .main_right_text {
+    color: white;
+    font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+}
+
+.main_right_title {
+    font-size: 3.5rem;
+    margin-right: 5vw;
+}
+
+.main_right_subtitle {
+    font-size: 2rem;
+    margin-right: 5vw;
+}
+
+.main_right_text {
+    font-size: 1.3rem;
+    margin-right: 5vw;
+}
+
+.more {
+    padding: 1.5vh 4vw;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: rgb(167,141,88);
+    border-radius: 20px;
+    margin-right: 5vw;
+    margin-top: 5vh;
+}
+.right_rotate a{
+    transform: rotate(-90deg);
+}
+
