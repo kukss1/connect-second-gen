@@ -1,0 +1,51 @@
+.about_wrapper {
+    display: flex;
+}
+
+.about_body {
+    width: 42vw;
+    height: 76vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-right: 1px solid grey;
+    margin-left: 0.1vw;
+}
+
+.idea {
+    width: 42vw;
+    text-align: center;
+}
+
+.idea h1 {
+    color: gray;
+    font-family: "Protest Strike", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.profit {
+    width: 35vw;
+    height: 40vh;
+    overflow-y: scroll;
+    z-index: 1;
+}
+
+.profit h3 {
+    color: white;
+    font-size: 1.7rem;
+    font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+}
+
+.about_body a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1vw 1vh;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 600;
+    background-color: rgb(167,141,88);
+    border-radius: 20px;
+}

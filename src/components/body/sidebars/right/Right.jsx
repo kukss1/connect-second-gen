@@ -1,6 +1,7 @@
 import React from "react";
 import "./Right.css";
 import Navigation from "../../navigation/Navigation";
+import { Link } from "react-router-dom";
 
 const Right = () => {
   return (
@@ -11,9 +12,9 @@ const Right = () => {
         <p className="main_right_text">
           Առաջին հայկական ինովացիոն ներդրումային կազմակերպությունը
         </p>
-        <a href="www" className="more">
+        <Link to="/about" className="more">
           Տեսնել ավելին
-        </a>
+        </Link>
       </div>
       <aside className="right">
         <div className="right_rotate">

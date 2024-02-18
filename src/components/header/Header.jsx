@@ -3,6 +3,8 @@ import "./Header.css";
 import logo from "../../assets/img/Logo.svg";
 
 const Header = () => {
+  const today = new Date().toLocaleDateString();
+
   return (
     <header>
       <div className="empty"></div>
@@ -15,7 +17,9 @@ const Header = () => {
           <h3>Invest Group</h3>
         </div>
       </div>
-      <div className="empty"></div>
+      <div className="empty">
+        <h3>{today}</h3>
+      </div>
       <div className="right_header_empty">
         <div className="header_nav"></div>
       </div>

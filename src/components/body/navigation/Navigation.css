@@ -18,7 +18,9 @@
     padding-right: 2vh;
     padding-left: 2vh;
     transition: 0.3s;
+    transform: rotate(-90deg);
     font-family: 'Nixie One', system-ui;
+    
 }
 .main_right_nav a:hover {
     background-color: rgb(167,141,88);

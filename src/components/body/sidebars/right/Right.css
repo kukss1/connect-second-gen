@@ -13,10 +13,16 @@
     margin-left: 0.1vw;
 }
 
-.main_right_title , .main_right_subtitle , .main_right_text {
+.main_right_title , .main_right_subtitle {
+    color: gray;
+}
+
+.main_right_text {
     color: white;
     font-family: "Protest Strike", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-right: 5vw;
 }
 
 .main_right_title {
@@ -29,10 +35,6 @@
     margin-right: 5vw;
 }
 
-.main_right_text {
-    font-size: 1.3rem;
-    margin-right: 5vw;
-}
 
 .more {
     padding: 1.5vh 4vw;
@@ -45,7 +47,5 @@
     margin-right: 5vw;
     margin-top: 5vh;
 }
-.right_rotate a{
-    transform: rotate(-90deg);
-}
+
 

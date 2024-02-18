@@ -35,8 +35,17 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="footer_empty"></div>
-      <div className="footer_body_second"></div>
+      <div className="footer_empty">
+        <h3>//////////</h3>
+      </div>
+      <div className="footer_body_second">
+        <div className="tel_wrapper">
+          <h3 className="tel_header">Tel. +374 44 166 620</h3>
+          <h3 className="tel_header">
+            Email - connectcapitalinvestgroup@gmail.com
+          </h3>
+        </div>
+      </div>
     </footer>
   );
 };
