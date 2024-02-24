@@ -1,0 +1,90 @@
+.bond_wrapper {
+    width: 100vw;
+    height: 76vh;
+    display: flex;
+}
+.bonds_empty {
+    width: 8.9vw;
+    border-right: 1px solid gray;
+}
+.bond_images {
+    display: flex;
+    flex-direction: column;
+    width: 93vw;
+    height: 76vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.bond_wrapper h3 {
+    color: gray;
+    font-size: 3rem;
+    font-family: 'Nixie One', system-ui;
+}
+.bond_wrapper p {
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+    border-bottom: 1px solid gray;
+    padding: 1vh;
+
+}
+.bond_img_queue {
+    width: 90vw;
+    display: flex;
+}
+
+.bonds_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3vw 3vh;
+    height: 45vh;
+    width: 40vw;
+}
+
+.line {
+    width: 100%;
+    border-top:1px dashed grey;
+}
+.vertical_line {
+    height: 100%;
+    border-left: 1px dashed grey;
+}
+
+.bond_image {
+    width: 20vw;
+    box-shadow: 3px 2px 5px gray;
+    border-radius: 10px;
+}
+
+.bonds_nav {
+    width: 7.8vw;
+    border-left: 1px solid gray;
+}
+
+
+/* animation  */
+
+  .bond_image , .gift_bond_image {
+    transition: transform 0.3s ease-in-out; /* Плавный переход */
+  }
+  
+  .bond_image:hover {
+    transform: scale(1.05); /* Небольшое увеличение */
+    box-shadow: 5px 5px 10px gray; /* Увеличение тени */
+  }
+
+  .bond_image {
+    opacity: 0;   
+    transform: translateY(80px);
+    transition: opacity 0.5s, transform 0.5s ease-in-out; 
+  }
+  
+  .bond_image.in-view { 
+    opacity: 1;  
+    transform: translateY(0); 
+  }
+
+  

@@ -5,6 +5,7 @@ import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import About from "./components/body/sidebars/about/About";
 import Left from "./components/body/sidebars/left/Left";
+import Bond from "./components/body/bond/Bond";
 
 function App() {
   const { pathname } = useLocation();
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/about" element={<About />} />
+          <Route path="/bonds" element={<Bond />} />
         </Routes>
       </div>
       <Footer />
