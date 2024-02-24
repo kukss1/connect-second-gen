@@ -1,22 +1,24 @@
 import React from "react";
 import "./Main.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 import Left from "./sidebars/left/Left";
 import Right from "./sidebars/right/Right";
 import About from "./sidebars/about/About";
 
 const Main = () => {
+  const { pathname } = useLocation();
+
   return (
     <main>
+      {" "}
       <div className="main_wrapper">
-        <Left />
+        {/* <Left />{" "} */}
         <Routes>
           <Route path="/" element={<Right />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About />} />{" "}
         </Routes>
-        <Right />
-        <About />
+        {pathname === "/" && <Right />}
       </div>
     </main>
   );

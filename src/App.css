@@ -5,3 +5,6 @@
   overflow: hidden;
 }
 
+.app_body {
+  display: flex;
+}
