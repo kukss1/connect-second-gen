@@ -6,6 +6,7 @@ import Header from "./components/header/Header";
 import About from "./components/body/sidebars/about/About";
 import Left from "./components/body/sidebars/left/Left";
 import Bond from "./components/body/bond/Bond";
+import Contact from "./components/body/contact/Contact";
 
 function App() {
   const { pathname } = useLocation();
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/about" element={<About />} />
           <Route path="/bonds" element={<Bond />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
       <Footer />

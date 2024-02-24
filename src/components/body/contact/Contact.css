@@ -1,0 +1,138 @@
+.contact_wrapper {
+    width: 100vw;
+    height: 76vh;
+    display: flex;
+}
+
+.contact_container {
+    width: 84vw;
+    height: 76vh;
+}
+
+.contact_empty {
+    width: 7.9vw;
+    height: 76vh;
+    border-right: 1px solid #686a6c;
+
+}
+.contact_header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 8vw;
+    height: 76vh;
+}
+
+.contact_header {
+    font-size: 1.8rem;
+    color: #686a6c;
+    font-weight: 100;
+    text-decoration: none;
+    transition: 0.3s;
+    transform: rotate(-90deg);
+    font-family: 'Nixie One', system-ui;
+}
+
+.contact_nav {
+    border-left: 1px solid grey;
+    width: 7.6vw;
+}
+
+.contact_wrapper {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 76vh;
+}
+
+.contact_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_container .social_card {
+    position: relative;
+    width: 200px;
+    height: 240px;
+    background: linear-gradient(#fff2 , transparent);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin: 0 -45px;
+    transform: rotate(calc(var(--r) * 1deg));
+}
+
+.contact_container:hover .social_card {
+    transform: rotate(0deg);
+    margin: 0 20px;
+    background: linear-gradient(rgba(255, 255, 255, 0.079) , transparent);
+}
+
+.social_card svg {
+    transition: 0.3s;
+}
+
+.social_card svg:hover {
+    color: white;
+}
+
+
+.contact_container .social_card::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #686a6c;
+}
+
+.contact_container .social_card .social_link {
+    font-size: 4rem;
+    color: gray;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact_container {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact_container .social_card {
+        margin: 15px 0; 
+        transform: rotate(0deg);
+    }
+
+    .contact_container:hover .social_card {
+        margin: 0; 
+    }
+}
+
+.contact_container .social_card::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+
+.contact_container .social_card .social_link {
+    font-size: 3rem;
+    color: gray;
+}
