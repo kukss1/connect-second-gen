@@ -49,3 +49,17 @@
     background-color: rgb(167,141,88);
     border-radius: 20px;
 }
+
+/* Mobile  */
+
+@media (max-width: 600px) {
+    .idea h1 {
+        font-size: 1.2rem;
+    }
+    .profit h3 {
+        font-size: 0.8rem;
+    }
+    .about_body a {
+        font-size: 0.9rem;
+    }
+}

@@ -24,7 +24,9 @@ const Header = () => {
         <h3>{today}</h3>
       </div>
       <div className="right_header_empty">
-        <div className="header_nav"></div>
+        <p>Արժեթղթերի գործող տոկոսադրույքը վերանայվում է ամեն եռամսյակը մեկ</p>
+        <p>{"/////////"}</p>
+        <p>գործող տոկոսադրույք 3-24%</p>
       </div>
       <div className="empty"></div>
     </header>

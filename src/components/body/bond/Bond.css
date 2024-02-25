@@ -87,4 +87,19 @@
     transform: translateY(0); 
   }
 
-  
+  /* Mobile  */
+
+  @media (max-width: 600px) {
+    .bonds_img h3 {
+        font-size: 1.2rem;
+    }
+    .bonds_img p {
+        font-size: 0.8rem;
+    }
+    .bond_image {
+        width: 30vw;
+    }
+    .bonds_empty {
+        display: none;
+    }
+  }

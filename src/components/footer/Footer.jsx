@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer_empty">
-        <h3>//////////</h3>
+        <h3>{"//////////"}</h3>
       </div>
       <div className="footer_body_second">
         <div className="tel_wrapper">

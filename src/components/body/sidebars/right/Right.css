@@ -27,7 +27,7 @@
 }
 
 .main_right_title {
-    font-size: 3.5rem;
+    font-size: 3.5em;
     margin-right: 5vw;
 }
 
@@ -50,3 +50,24 @@
 }
 
 
+@media (max-width: 600px) {
+
+    .main_right_body {
+        align-items: center;
+    }
+    .main_right_title {
+        font-size: 1.4rem;
+        margin-right: 1vw;
+    }
+    .main_right_subtitle {
+        font-size: 1.2rem;
+    }
+    .main_right_text {
+        font-size: 0.7rem;
+    }
+    .more {
+        padding: 1vh 2vw;
+        font-size: 1rem;
+    }
+
+}

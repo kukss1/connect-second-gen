@@ -8,8 +8,8 @@ import gift from "../../../assets/img/bonds/GiftBond.png";
 import Navigation from "../navigation/Navigation";
 
 const Bond = () => {
-  const bondImageRefs = useRef([]); // Храним ссылки на изображения
-  bondImageRefs.current = []; // Инициализация пустого массива
+  const bondImageRefs = useRef([]);
+  bondImageRefs.current = [];
 
   const addRefs = (el) => {
     if (el && !bondImageRefs.current.includes(el)) {
@@ -23,7 +23,6 @@ const Bond = () => {
         if (entry.isIntersecting) {
           entry.target.classList.add("in-view");
         } else {
-          // Изменение здесь!
           entry.target.classList.remove("in-view");
         }
       });
@@ -32,8 +31,9 @@ const Bond = () => {
     bondImageRefs.current.forEach((ref) => observer.observe(ref));
 
     return () => {
-      observer.disconnect(); // Отключение observer при unmount компонента
+      observer.disconnect();
     };
+    // eslint-disable-next-line
   }, [bondImageRefs.current]);
 
   return (

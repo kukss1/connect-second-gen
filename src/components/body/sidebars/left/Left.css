@@ -5,7 +5,6 @@
     background-image: url(../../../../assets/img/building.jpg);
     background-position: center;
     border-right: 1px solid grey;
-    /* margin-left: 0.1vw; */
 }
 
 .main_social {
@@ -52,3 +51,20 @@
     background-color: rgba(0, 0, 0, 0.6 );
     border-left: 1px solid gray;
 }
+
+
+
+/* Mobile  */
+
+
+@media (max-width: 600px) {
+
+    .social_icons a {
+        padding: 0.5vw;
+        margin-bottom: 1vh;
+    }
+    .empty_aside {
+        border: none;
+    }
+}
+  
