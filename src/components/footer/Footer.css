@@ -129,3 +129,18 @@
         font-size: 0.8rem;
     }
 }
+
+@media (max-width: 420px) {
+    .tel_header {
+        font-size: 0.6rem;
+    }
+    .year {
+        max-height: 7vh;
+    }
+    .year h3 {
+        font-size: 0.8rem;
+    }
+    .year p {
+        font-size: 0.7rem;
+    }
+}

@@ -18,10 +18,10 @@ function App() {
 
   const transitions = useTransition(pathname, {
     key: pathname,
-    from: { transform: `scale(0.5)` },
-    enter: { transform: `scale(1)` },
-    leave: { transform: `scale(0.4)` },
-    config: { delay: 500 },
+    from: { transform: "translateY(-100%)" },
+    enter: { transform: "translateX(0%)" },
+    leave: { transform: "translateX(300%)" },
+    config: { duration: 500 },
   });
 
   const memoizedRoutes = useMemo(

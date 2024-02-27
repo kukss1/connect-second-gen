@@ -84,7 +84,7 @@ const Bond = () => {
               className="bond_image"
               ref={addRefs}
             />
-            <p>Գին։ 1.000.0000 Դր․</p>
+            <p>Գին։ 1.000.000 Դր․</p>
           </div>
         </div>
         <div className="line"></div>

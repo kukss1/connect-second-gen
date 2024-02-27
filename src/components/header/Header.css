@@ -93,3 +93,17 @@ header {
 
 
   }
+
+  @media (max-width: 420px) {
+  
+    .header_headers h3{
+      font-size: 1rem;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo > img {
+      width: 100px;
+  }
+  }
