@@ -2,6 +2,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { useTransition, animated } from "react-spring";
 import { useMemo } from "react";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import Main from "./components/body/Main";
 import Footer from "./components/footer/Footer";
@@ -47,6 +48,7 @@ function App() {
       </div>
       <Footer />
       <Analytics />
+      <SpeedInsights />
     </div>
   );
 }
