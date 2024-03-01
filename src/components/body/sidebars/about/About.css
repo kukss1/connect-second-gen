@@ -63,3 +63,15 @@
         font-size: 0.9rem;
     }
 }
+
+@media (max-width: 1361px) {
+    .idea h1 {
+        font-size: 1.5rem;
+    }
+    .profit h3 {
+        font-size: 0.9rem;
+    }
+    .about_body a {
+        font-size: 1rem;
+    }
+}

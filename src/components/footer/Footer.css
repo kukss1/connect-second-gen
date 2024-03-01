@@ -107,6 +107,7 @@
     }
     .year {
         min-width: 25vw;
+        flex-direction: column;
     }
     .year h3 {
         font-size: 1rem;
@@ -142,5 +143,31 @@
     }
     .year p {
         font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 1361px) {
+    .year {
+        width: 20vw;
+        height: 7vh;
+        
+    }
+    .year h3 {
+        font-size: 0.8rem;
+        margin: 0;
+    }
+    .year p {
+        font-size: 0.5rem;
+        margin: 0;
+    }
+    .footer_empty h3 {
+        font-weight: 200;
+        font-size: 1rem;
+    }
+    .footer_wrapper {
+        overflow-y: scroll;
+    }
+    .tel_header {
+        font-size: 0.8rem;
     }
 }

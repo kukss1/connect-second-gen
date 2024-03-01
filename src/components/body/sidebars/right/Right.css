@@ -71,3 +71,20 @@
     }
 
 }
+
+@media (max-width: 1361px) {
+    .main_right_title {
+        align-items: center;
+        font-size: 2rem;
+    }
+    .main_right_subtitle {
+        font-size:1rem ;
+    }
+    .main_right_text {
+        font-size: 0.8rem;
+    }
+    .more {
+        padding: 1vh 2vw;
+        font-weight: 400;
+    }
+}

@@ -91,7 +91,6 @@ header {
       font-size: 0.8vw; 
     }
 
-
   }
 
   @media (max-width: 420px) {
@@ -107,3 +106,33 @@ header {
       width: 100px;
   }
   }
+
+  @media (max-width: 1361px) {
+    .empty h3 {
+      font-size:0.7rem ;
+    }
+    .logo > img {
+      width: 150px;
+    }
+    .header_headers h3 {
+      font-size: 0.8rem;
+    }
+    .right_header_empty p {
+      font-size: 0.5rem;
+    }
+  }
+
+  @media (max-width: 816px) {
+    .empty h3 {
+      font-size: 0.5rem;
+    }
+    .logo {
+      width: 150px;
+    }
+    .logo > img {
+      width: 140px;
+    }
+    .header_headers h3 {
+      font-size: 0.6rem;
+    }
+  }  

@@ -103,3 +103,12 @@
         display: none;
     }
   }
+
+  @media (max-width: 1361px) {
+    .bond_wrapper h3 {
+        font-size: 1.6rem;
+    }
+    .bond_wrapper p {
+        font-size: 1rem;
+    }
+  }
