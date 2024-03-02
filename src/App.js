@@ -1,5 +1,5 @@
 import { Route, Routes, useLocation } from "react-router-dom";
-import { useTransition, animated } from "react-spring";
+import { AnimatePresence } from "framer-motion";
 import { useMemo } from "react";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
@@ -16,14 +16,6 @@ import "./App.css";
 
 function App() {
   const { pathname } = useLocation();
-
-  const transitions = useTransition(pathname, {
-    key: pathname,
-    from: { transform: "translateY(-100%)" },
-    enter: { transform: "translateX(0%)" },
-    leave: { transform: "translateX(300%)" },
-    config: { duration: 500 },
-  });
 
   const memoizedRoutes = useMemo(
     () => (
@@ -42,9 +34,7 @@ function App() {
       <Header />
       <div className="app_body">
         {pathname === "/" || pathname === "/about" ? <Left /> : null}
-        {transitions((styles, item) => (
-          <animated.div style={styles}>{memoizedRoutes}</animated.div>
-        ))}
+        <AnimatePresence>{memoizedRoutes}</AnimatePresence>
       </div>
       <Footer />
       <Analytics />

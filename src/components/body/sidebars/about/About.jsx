@@ -1,12 +1,27 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 import "./About.css";
 import Navigation from "../../navigation/Navigation";
 import { Link } from "react-router-dom";
 
+const pageVariants = {
+  initial: { opacity: 0, y: 20 },
+  in: { opacity: 1, y: 0 },
+  out: { opacity: 0 },
+};
+
 const About = () => {
   return (
-    <div className="about_wrapper">
-      <div className="about_body">
+    <motion.div className="about_wrapper">
+      <motion.div
+        className="about_body"
+        initial="initial"
+        animate="in"
+        exit="out"
+        transition={{ duration: 0.6 }}
+        variants={pageVariants}
+      >
         <div className="idea">
           <h1>
             2020-ին ի հայտ եկած գաղափարը վերածվեց սպասված իրականության 2024-ում։
@@ -36,11 +51,11 @@ const About = () => {
           </h3>
         </div>
         <Link to="/">Գլխավոր Էջ</Link>
-      </div>
+      </motion.div>
       <aside>
         <Navigation />
       </aside>
-    </div>
+    </motion.div>
   );
 };
 

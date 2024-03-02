@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 import "./Contact.css";
 import { LuFacebook, LuInstagram } from "react-icons/lu";
 
@@ -7,23 +9,43 @@ import { ImWhatsapp } from "react-icons/im";
 import Navigation from "../navigation/Navigation";
 
 const Contact = () => {
+  const headerVariants = {
+    initial: { opacity: 0, y: -50 },
+    in: { opacity: 1, y: 0 },
+    out: { opacity: 0 },
+  };
+
+  const socialCardVariants = {
+    initial: { opacity: 0, x: 50, rotate: "-20deg" },
+    in: { opacity: 1, x: 0, rotate: "0deg" },
+    out: { opacity: 0 },
+  };
+
   return (
     <div className="contact_wrapper">
       <div className="contact_empty">
-        <div className="contact_header_wrapper">
+        <motion.div
+          className="contact_header_wrapper"
+          initial="initial"
+          animate="in"
+          variants={headerVariants}
+        >
           <h1 className="contact_header"> միջոցը</h1>
           <h1 className="contact_header"> կապի </h1>
           <h1 className="contact_header"> հարմար </h1>
           <h1 className="contact_header"> ձեզ </h1>
           <h1 className="contact_header">Ընտրեք</h1>
-        </div>
+        </motion.div>
       </div>
 
       <div className="contact_container">
-        <div
+        <motion.div
           className="social_card"
           style={{ "--r": -15 }}
           data-text="Facebook"
+          initial="initial"
+          animate="in"
+          variants={socialCardVariants}
         >
           <a
             target="blank"
@@ -33,8 +55,15 @@ const Contact = () => {
             {" "}
             <LuFacebook />
           </a>
-        </div>
-        <div className="social_card" style={{ "--r": 5 }} data-text="Instagram">
+        </motion.div>
+        <motion.div
+          className="social_card"
+          style={{ "--r": 5 }}
+          data-text="Instagram"
+          initial="initial"
+          animate="in"
+          variants={socialCardVariants}
+        >
           <a
             target="blank"
             href="https://www.instagram.com/ccinvestgroup/"
@@ -42,8 +71,15 @@ const Contact = () => {
           >
             <LuInstagram />
           </a>
-        </div>
-        <div className="social_card" style={{ "--r": 25 }} data-text="Telegram">
+        </motion.div>
+        <motion.div
+          className="social_card"
+          style={{ "--r": 25 }}
+          data-text="Telegram"
+          initial="initial"
+          animate="in"
+          variants={socialCardVariants}
+        >
           <a
             target="blank"
             href="https://t.me/ccinvestgroup"
@@ -51,11 +87,14 @@ const Contact = () => {
           >
             <PiTelegramLogoBold />
           </a>
-        </div>
-        <div
+        </motion.div>
+        <motion.div
           className="social_card"
           style={{ "--r": -15 }}
           data-text="Whatsapp"
+          initial="initial"
+          animate="in"
+          variants={socialCardVariants}
         >
           <a
             target="blank"
@@ -65,7 +104,7 @@ const Contact = () => {
             {" "}
             <ImWhatsapp />
           </a>
-        </div>
+        </motion.div>
       </div>
       <div className="contact_nav">
         <Navigation />

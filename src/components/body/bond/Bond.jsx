@@ -1,4 +1,6 @@
 import React, { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
+
 import "./Bond.css";
 import one from "../../../assets/img/bonds/oneBond.png";
 import ten from "../../../assets/img/bonds/TenBonds.png";
@@ -10,6 +12,12 @@ import Navigation from "../navigation/Navigation";
 const Bond = () => {
   const bondImageRefs = useRef([]);
   bondImageRefs.current = [];
+
+  const socialVariants = {
+    initial: { opacity: 0, y: 100 },
+    in: { opacity: 1, y: 0 },
+    out: { opacity: 0 },
+  };
 
   const addRefs = (el) => {
     if (el && !bondImageRefs.current.includes(el)) {
@@ -37,7 +45,13 @@ const Bond = () => {
   }, [bondImageRefs.current]);
 
   return (
-    <div className="bond_wrapper">
+    <motion.div
+      className="bond_wrapper"
+      initial="initial"
+      animate="in"
+      variants={socialVariants}
+      transition={{ duration: 0.6, delay: 0.3 }}
+    >
       <div className="bonds_empty"></div>
       <div className="bond_images">
         <div className="bond_img_queue">
@@ -56,7 +70,7 @@ const Bond = () => {
             <h3>Ten Bond</h3>
             <img
               src={ten}
-              alt="One Bond"
+              alt="Ten Bond"
               className="bond_image"
               ref={addRefs}
             />
@@ -104,7 +118,7 @@ const Bond = () => {
       <div className="bonds_nav">
         <Navigation />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
