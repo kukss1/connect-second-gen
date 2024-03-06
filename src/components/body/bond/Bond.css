@@ -57,6 +57,7 @@
     width: 20vw;
     box-shadow: 3px 2px 5px gray;
     border-radius: 10px;
+    
 }
 
 .bonds_nav {
@@ -72,8 +73,9 @@
   }
   
   .bond_image:hover {
-    transform: scale(1.05); 
     box-shadow: 5px 5px 10px gray; 
+    transition: 0.3s;
+
   }
 
   .bond_image {
@@ -86,6 +88,9 @@
     opacity: 1;  
     transform: translateY(0); 
   }
+
+
+
 
   /* Mobile  */
 
