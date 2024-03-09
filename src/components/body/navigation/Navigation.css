@@ -22,36 +22,34 @@
     font-family: 'Nixie One', system-ui;
     
 }
-/* .main_right_nav a:hover {
-    background-color: rgb(167,141,88);
-} */
+
 .main_right_nav a:hover {
-    transform: rotate(-75deg);
+    transform: rotate(-90deg);
 }
 
 .main_right_nav:hover > a:not(:hover) {
     filter: blur(10px);
-    transform: rotate(-105deg);
+    transform: rotate(-90deg);
 }
 
 @media (hover:hover) {
     .main_right_nav a:hover {
-        transform: rotate(-75deg);
+        transform: rotate(-90deg) scale(1.1);
     }
     
     .main_right_nav:hover > a:not(:hover) {
         filter: blur(10px);
-        transform: rotate(-105deg);
+        transform: rotate(-90deg);
     }
 }
 
 @media (hover:none) {
     .main_right_nav a:active {
-        transform: rotate(-75deg);
+        transform: rotate(-90deg) ;
     }
     
     .main_right_nav:active > a:not(:active) {
         filter: blur(10px);
-        transform: rotate(-105deg);
+        transform: rotate(-90deg) scale(0.9);
     }
 }

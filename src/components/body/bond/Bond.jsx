@@ -1,12 +1,15 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import { price } from "../../../assets/data/Price";
 
 import "./Bond.css";
+
 import one from "../../../assets/img/bonds/oneBond.png";
 import ten from "../../../assets/img/bonds/TenBonds.png";
 import hundred from "../../../assets/img/bonds/OneHundred.png";
 import thousand from "../../../assets/img/bonds/OneThousandBond.png";
 import gift from "../../../assets/img/bonds/GiftBond.png";
+
 import Navigation from "../navigation/Navigation";
 
 const Bond = () => {
@@ -38,6 +41,8 @@ const Bond = () => {
 
     bondImageRefs.current.forEach((ref) => observer.observe(ref));
 
+    const totalPrice = price[0];
+
     return () => {
       observer.disconnect();
     };
@@ -63,7 +68,7 @@ const Bond = () => {
               className="bond_image"
               ref={addRefs}
             />
-            <p>Գին։ 1.000 Դր․</p>
+            <p>Գին։ {price[0]} Դր․</p>
           </div>
           <div className="vertical_line"></div>
           <div className="bonds_img">
@@ -74,7 +79,7 @@ const Bond = () => {
               className="bond_image"
               ref={addRefs}
             />
-            <p>Գին։ 10.000 Դր․</p>
+            <p>Գին։ {price[0] * 10} Դր․</p>
           </div>
         </div>
         <div className="line"></div>
@@ -87,7 +92,7 @@ const Bond = () => {
               className="bond_image"
               ref={addRefs}
             />
-            <p>Գին։ 100.000 Դր․</p>
+            <p>Գին։ {price[0] * 100} Դր․</p>
           </div>
           <div className="vertical_line"></div>
           <div className="bonds_img">
@@ -98,7 +103,7 @@ const Bond = () => {
               className="bond_image"
               ref={addRefs}
             />
-            <p>Գին։ 1.000.000 Դր․</p>
+            <p>Գին։ {price[0] * 1000} Դր․</p>
           </div>
         </div>
         <div className="line"></div>

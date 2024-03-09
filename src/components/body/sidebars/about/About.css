@@ -30,11 +30,12 @@
     height: 40vh;
     overflow-y: scroll;
     z-index: 1;
+    margin-bottom: 1vh;
 }
 
 .profit h3 {
     color: white;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     font-family: "Protest Strike", sans-serif;
   font-weight: 400;
 }
@@ -42,12 +43,13 @@
 .about_body a {
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     padding: 1vw 1vh;
     font-family: "Protest Strike", sans-serif;
     font-weight: 600;
     background-color: rgb(167,141,88);
     border-radius: 20px;
+    margin-bottom: 1vh;
 }
 
 /* Mobile  */

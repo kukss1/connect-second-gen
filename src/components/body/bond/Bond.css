@@ -73,7 +73,7 @@
   }
   
   .bond_image:hover {
-    box-shadow: 5px 5px 10px gray; 
+    filter:drop-shadow(5px 5px 10px gray) ; 
     transition: 0.3s;
 
   }
@@ -89,7 +89,9 @@
     transform: translateY(0); 
   }
 
-
+  .bond_image.in-view:hover {
+    transform:scale(1.1);
+  }
 
 
   /* Mobile  */
