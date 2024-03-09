@@ -19,7 +19,8 @@
     padding-left: 2vh;
     transition: 0.3s;
     transform: rotate(-90deg);
-    font-family: 'Nixie One', system-ui;
+    font-family: "Noto Serif Armenian", serif;
+    font-weight: 100;
     
 }
 

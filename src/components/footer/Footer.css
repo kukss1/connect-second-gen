@@ -69,6 +69,8 @@
     font-size: 1rem;
     color: white;
     margin: 0.5vh;
+    font-family: "Noto Serif Armenian", serif;
+    font-weight: 100;
 }
 
 .about_years svg {

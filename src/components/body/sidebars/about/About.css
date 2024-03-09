@@ -36,17 +36,17 @@
 .profit h3 {
     color: white;
     font-size: 1.3rem;
-    font-family: "Protest Strike", sans-serif;
-  font-weight: 400;
+    font-family: "Noto Serif Armenian", serif;
+    font-weight: 200;
 }
 
 .about_body a {
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
-    padding: 1vw 1vh;
-    font-family: "Protest Strike", sans-serif;
-    font-weight: 600;
+    padding: 0.8vw 0.8vh;
+    font-family: "Noto Serif Armenian", serif;
+    font-weight: 300;
     background-color: rgb(167,141,88);
     border-radius: 20px;
     margin-bottom: 1vh;

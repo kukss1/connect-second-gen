@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 const Navigation = () => {
   return (
     <nav className="main_right_nav">
-      <Link to="/">Home</Link>
-      <Link to="/bonds">Bonds</Link>
-      <Link to="/contact">Contact</Link>
+      <Link to="/">Գլխավոր</Link>
+      <Link to="/bonds">Բոնդեր</Link>
+      <Link to="/contact">Կապ</Link>
     </nav>
   );
 };
