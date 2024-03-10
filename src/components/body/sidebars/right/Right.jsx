@@ -60,9 +60,11 @@ const Right = () => {
         <p className="main_right_text">
           Առաջին հայկական ինովացիոն ներդրումային կազմակերպությունը
         </p>
-        <Link to="/about" className="more">
-          Տեսնել ավելին
-        </Link>
+        <div className="more_btn">
+          <Link to="/about" className="more">
+            Տեսնել ավելին
+          </Link>
+        </div>
       </motion.div>
       <motion.div
         className="right"

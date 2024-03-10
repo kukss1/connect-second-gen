@@ -2,11 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import "./Contact.css";
-import { LuFacebook, LuInstagram } from "react-icons/lu";
 
+import { LuFacebook, LuInstagram } from "react-icons/lu";
 import { PiTelegramLogoBold } from "react-icons/pi";
 import { ImWhatsapp } from "react-icons/im";
+
 import Navigation from "../navigation/Navigation";
+
+import leftSide from "../../../assets/img/left_side.png";
 
 const Contact = () => {
   const headerVariants = {
@@ -29,82 +32,83 @@ const Contact = () => {
           initial="initial"
           animate="in"
           variants={headerVariants}
+          transition={{ duration: 1.1 }}
         >
-          <h1 className="contact_header"> միջոցը</h1>
-          <h1 className="contact_header"> կապի </h1>
-          <h1 className="contact_header"> հարմար </h1>
-          <h1 className="contact_header"> ձեզ </h1>
-          <h1 className="contact_header">Ընտրեք</h1>
+          <img src={leftSide} alt="DNA" className="left_side" />
         </motion.div>
       </div>
 
       <div className="contact_container">
-        <motion.div
-          className="social_card"
-          style={{ "--r": -15 }}
-          data-text="Facebook"
-          initial="initial"
-          animate="in"
-          variants={socialCardVariants}
-        >
-          <a
-            target="blank"
-            href="https://www.facebook.com/profile.php?id=61554687161610"
-            className="social_link"
+        <div className="social_wrapper">
+          <motion.div
+            className="social_card"
+            data-text="Facebook"
+            initial="initial"
+            animate="in"
+            variants={socialCardVariants}
+            transition={{ duration: 0.3 }}
           >
-            {" "}
-            <LuFacebook />
-          </a>
-        </motion.div>
-        <motion.div
-          className="social_card"
-          style={{ "--r": 5 }}
-          data-text="Instagram"
-          initial="initial"
-          animate="in"
-          variants={socialCardVariants}
-        >
-          <a
-            target="blank"
-            href="https://www.instagram.com/ccinvestgroup/"
-            className="social_link"
+            <a
+              target="blank"
+              href="https://www.facebook.com/profile.php?id=61554687161610"
+              className="social_link"
+            >
+              <LuFacebook />
+              Facebook
+            </a>
+          </motion.div>
+          <motion.div
+            className="social_card"
+            data-text="Instagram"
+            initial="initial"
+            animate="in"
+            variants={socialCardVariants}
+            transition={{ duration: 0.5 }}
           >
-            <LuInstagram />
-          </a>
-        </motion.div>
-        <motion.div
-          className="social_card"
-          style={{ "--r": 25 }}
-          data-text="Telegram"
-          initial="initial"
-          animate="in"
-          variants={socialCardVariants}
-        >
-          <a
-            target="blank"
-            href="https://t.me/ccinvestgroup"
-            className="social_link"
+            <a
+              target="blank"
+              href="https://www.instagram.com/ccinvestgroup/"
+              className="social_link"
+            >
+              <LuInstagram />
+              Instagram
+            </a>
+          </motion.div>
+          <motion.div
+            className="social_card"
+            data-text="Telegram"
+            initial="initial"
+            animate="in"
+            variants={socialCardVariants}
+            transition={{ duration: 0.7 }}
           >
-            <PiTelegramLogoBold />
-          </a>
-        </motion.div>
-        <motion.div
-          className="social_card"
-          style={{ "--r": -15 }}
-          data-text="Whatsapp"
-          initial="initial"
-          animate="in"
-          variants={socialCardVariants}
-        >
-          <a
-            target="blank"
-            href="https://wa.me/37444166620"
-            className="social_link"
+            <a
+              target="blank"
+              href="https://t.me/ccinvestgroup"
+              className="social_link"
+            >
+              <PiTelegramLogoBold />
+              Telegram
+            </a>
+          </motion.div>
+          <motion.div
+            className="social_card"
+            data-text="Whatsapp"
+            initial="initial"
+            animate="in"
+            variants={socialCardVariants}
+            transition={{ duration: 0.9 }}
           >
-            {" "}
-            <ImWhatsapp />
-          </a>
-        </motion.div>
+            <a
+              target="blank"
+              href="https://wa.me/37444166620"
+              className="social_link"
+            >
+              <ImWhatsapp />
+              Whatsapp
+            </a>
+          </motion.div>
+        </div>
       </div>
       <div className="contact_nav">
         <Navigation />

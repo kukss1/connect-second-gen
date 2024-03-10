@@ -44,7 +44,7 @@
     font-family: "Noto Serif Armenian", serif;
     font-size: 1.3rem;
     font-weight: 200;
-    background-color: rgb(167,141,88);
+    background-color: rgba(167,141,88,0.5);
     border-radius: 20px;
     margin-right: 5vw;
     margin-top: 5vh;
