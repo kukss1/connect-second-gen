@@ -1,4 +1,5 @@
 header {
+  width: 100vw;
     height: 12vh;
     border-bottom: 1px solid gray;
     display: flex;
@@ -56,14 +57,37 @@ header {
     font-size: 0.7rem;
 }
 
+.login {
+  width: 7.9vw;
+  height: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login > a {
+  color: #f1faff;
+  font-family: "Noto Serif Armenian", serif;
+  font-size: 1rem;
+  font-weight: 200;
+  text-decoration: none;
+  margin-top: 1vh;
+  letter-spacing: 2px;
+}
+.login a svg {
+  font-size: 2rem;
+  color: rgba(167,141,88,0.5);
+}
+
 
 /* Mobile  */
 
 
   @media (max-width: 600px) {
     header {
-      flex-direction: column; 
-      align-items: center;   
+      display: grid;
+      grid-template-columns: 3fr 1fr;  
+      align-items: center;
     }
   
     .empty {
@@ -75,10 +99,11 @@ header {
     }
   
     .logo_wrapper {
-      width: 100vw;  
+      width: 50vw;  
       border-right: none; 
       align-items: center;
       justify-content: center;
+      
     }
   
     .logo {
@@ -87,6 +112,9 @@ header {
     .logo > img {
       width: 265px;
     }
+    .header_headers {
+      display: none;
+    }
   
     .right_header_empty {
       display: none;
@@ -94,6 +122,13 @@ header {
   
     .right_header_empty p {
       font-size: 0.8vw; 
+    }
+    .login {
+      width: 50vw;
+      margin-bottom: 2vh;
+    }
+    .login a {
+      font-size: 0.8rem;
     }
 
   }
@@ -124,6 +159,9 @@ header {
     }
     .right_header_empty p {
       font-size: 0.5rem;
+    }
+    .login > a {
+      font-size: 0.8rem;
     }
   }
 

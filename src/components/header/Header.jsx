@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.css";
 import logo from "../../assets/img/Logo.svg";
 import { Link } from "react-router-dom";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { FaUserTie } from "react-icons/fa";
 
 const Header = () => {
+  const [user, setUser] = useState(null);
   const today = new Date().toLocaleDateString();
+
+  useEffect(() => {
+    const auth = getAuth();
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setUser(user);
+    });
+    return () => unsubscribe();
+  }, []);
 
   return (
     <header>
@@ -29,6 +40,15 @@ const Header = () => {
         <p>գործող տոկոսադրույք 3-24%</p>
       </div>
       <div className="empty"></div>
+      <div className="login">
+        {!user && <Link to="/login">Մուտք</Link>}
+        {!user && <Link to="/register">Գրանցվել</Link>}
+        {user && (
+          <Link to="/profile">
+            <FaUserTie />
+          </Link>
+        )}
+      </div>
     </header>
   );
 };

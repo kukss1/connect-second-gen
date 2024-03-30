@@ -13,6 +13,9 @@ import Bond from "./components/body/bond/Bond";
 import Contact from "./components/body/contact/Contact";
 
 import "./App.css";
+import Login from "./components/header/signPages/Login";
+import Register from "./components/header/signPages/Register";
+import Profile from "./components/body/profile/Profile";
 
 function App() {
   const { pathname } = useLocation();
@@ -20,8 +23,11 @@ function App() {
   const memoizedRoutes = useMemo(
     () => (
       <Routes>
-        <Route path="/" element={<Main />} key="/" />
+        <Route path="/*" element={<Main />} key="/" />
         <Route path="/about" element={<About />} key="/about" />
+        <Route path="/login" element={<Login />} key="login" />
+        <Route path="/register" element={<Register />} key="/register" />
+        <Route path="/profile" element={<Profile />} key="profile" />
         <Route path="/bonds" element={<Bond />} key="/bonds" />
         <Route path="/contact" element={<Contact />} key="/contact" />
       </Routes>

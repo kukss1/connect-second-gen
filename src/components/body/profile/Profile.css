@@ -1,0 +1,87 @@
+.profileWrapper {
+    width: 100vw;
+    height: 76vh;
+    overflow-y: scroll;
+}
+
+.userHeader {
+    text-align: center;
+    color: gray;
+    font-family: "Noto Serif Armenian", serif;
+    font-weight: 400;
+}
+
+.userInfo {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #E2DFD2;
+    font-family: "Noto Serif Armenian", serif;
+    font-weight: 200;
+}
+.userInfo svg {
+    font-size: 2rem;
+    margin-right: 0.5vw;
+}
+.userInfoAsset {
+    display: flex;
+    align-items: center;
+}
+.userInfoAsset p {
+    margin-left: 1vw;
+}
+.signOutBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.signOutBtn svg {
+    color: rgba(167,141,88,0.5);
+    font-size: 2rem;
+}
+
+.userPortfolio {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+}
+.certificateImg ,.bondImg {
+    width: 30vw;
+}
+.certificateWrapper , .totalBonds {
+    color: #E2DFD2;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.totalPortfolio {
+    color: #E2DFD2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid gray;
+    font-family: "Noto Serif Armenian", serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+.totalPortfolio > a{
+    text-decoration: none;
+    color: rgba(167,141,88,0.5);
+    margin-bottom: 2vh;
+}
+
+@media (max-width: 600px) {
+    .userInfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .userPortfolio {
+        flex-direction: column;
+    }
+    .certificateImg ,.bondImg {
+        width: 50vw;
+    }
+    .totalPortfolio {
+        flex-direction: column;
+    }
+}

@@ -40,7 +40,7 @@ const Bond = () => {
     });
 
     bondImageRefs.current.forEach((ref) => observer.observe(ref));
-
+    // eslint-disable-next-line
     const totalPrice = price[0];
 
     return () => {
