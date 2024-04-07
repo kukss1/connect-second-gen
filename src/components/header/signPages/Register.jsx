@@ -11,9 +11,15 @@ function Register() {
   const [lastName, setLastName] = useState("");
   const [age, setAge] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const register = async () => {
+    if (!phoneNumber.startsWith("+374")) {
+      setError("հեռախոսահամարը պետք է սկսվի +374 կոդով");
+      return;
+    }
+
     const auth = getAuth();
     try {
       const userCredential = await createUserWithEmailAndPassword(
@@ -89,6 +95,7 @@ function Register() {
           Գրանցվել
         </button>
       </div>
+      {error && <p className="errorMessage">{error}</p>}
     </div>
   );
 }

@@ -20,7 +20,7 @@ const Profile = () => {
   const [lastName, setLastName] = useState("");
   const [age, setAge] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
-  const [certificate, setCertificate] = useState("Please Validate");
+  const [certificate, setCertificate] = useState("");
   const [bonds, setBonds] = useState(0);
   const navigate = useNavigate();
 
@@ -94,7 +94,7 @@ const Profile = () => {
             alt="Certificate"
             className="certificateImg"
           />
-          <p>CerteficateID: {certificate}</p>
+          <p>CerteficateID: {certificate || "Չնույնականացված"}</p>
         </div>
         <div className="totalBonds">
           <img src={bond} alt="bond" className="bondImg" />
@@ -102,7 +102,7 @@ const Profile = () => {
         </div>
       </div>
       <div className="totalPortfolio">
-        <p>Ընդհանուր Պորտֆոլիո - {price[0] * bonds} դր.</p>
+        <p>Ընդհանուր Պորտֆոլիո - {price[0] * bonds || 0} դր.</p>
         <a
           target="blank"
           href="https://wa.me/37444166620"

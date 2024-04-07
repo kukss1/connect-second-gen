@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const login = async () => {
@@ -16,12 +17,13 @@ const Login = () => {
         email,
         password
       );
-
+      // eslint-disable-next-line
       const user = userCredential.user;
       console.log("Пользователь вошел в систему: ");
       navigate("/profile");
     } catch (error) {
       console.error("Ошибка входа: ", error);
+      setError("սխալ մուտքանուն կամ գաղտնաբառ");
     }
   };
 
@@ -46,6 +48,7 @@ const Login = () => {
         <button className="loginBtn" onClick={login}>
           Մուտք
         </button>
+        {error && <p className="errorMessage">{error}</p>}
       </div>
     </div>
   );
