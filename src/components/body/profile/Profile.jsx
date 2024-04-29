@@ -13,15 +13,11 @@ import { price } from "../../../assets/data/Price";
 
 import certificateLogo from "../../../assets/img/certeficatepng.png";
 import bond from "../../../assets/img/bonds/OneHundred.png";
+import spinner from "../../../assets/img/Spinner.svg";
 
 const Profile = () => {
   const [user, setUser] = useState(null);
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [age, setAge] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
-  const [certificate, setCertificate] = useState("");
-  const [bonds, setBonds] = useState(0);
+  const [userData, setUserData] = useState({});
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -32,13 +28,7 @@ const Profile = () => {
         const docSnap = await getDoc(docRef);
 
         if (docSnap.exists()) {
-          const data = docSnap.data();
-          setFirstName(data.firstName);
-          setLastName(data.lastName);
-          setAge(data.age);
-          setPhoneNumber(data.phoneNumber);
-          setCertificate(data.certificateID);
-          setBonds(data.bonds);
+          setUserData(docSnap.data());
         }
       }
 
@@ -60,33 +50,16 @@ const Profile = () => {
   };
 
   if (!user) {
-    return <div>Please Login</div>;
+    return (
+      <div className="loading">
+        <img src={spinner} alt="Loading" className="loading_spinner" />
+      </div>
+    );
   }
 
   return (
     <div className="profileWrapper">
       <h1 className="userHeader">Անձնական էջ</h1>
-      <div className="userInfo">
-        <div className="userInfoAsset">
-          <MdOutlineContactPage />
-          <p>{firstName}</p>
-          <p> {lastName}</p>
-        </div>
-        <div className="userInfoAsset">
-          <TbRating18Plus />
-          <p> {age}</p>
-        </div>
-
-        <div className="userInfoAsset">
-          <MdOutlinePhonelinkLock />
-          <p>{phoneNumber}</p>
-        </div>
-        <div>
-          <button className="signOutBtn" onClick={logout}>
-            <RiLogoutBoxRLine />
-          </button>
-        </div>
-      </div>
       <div className="userPortfolio">
         <div className="certificateWrapper">
           <img
@@ -94,15 +67,36 @@ const Profile = () => {
             alt="Certificate"
             className="certificateImg"
           />
-          <p>CerteficateID: {certificate || "Չնույնականացված"}</p>
+          <p>CerteficateID: {userData.certificateID || "Չնույնականացված"}</p>
         </div>
         <div className="totalBonds">
           <img src={bond} alt="bond" className="bondImg" />
-          <p>Bonds: {bonds}</p>
+          <p>Bonds: {userData.bonds}</p>
+        </div>
+      </div>
+      <div className="userInfo">
+        <div className="userInfoAsset">
+          <MdOutlineContactPage />
+          <p>{userData.firstName}</p>
+          <p> {userData.lastName}</p>
+        </div>
+        <div className="userInfoAsset">
+          <TbRating18Plus />
+          <p> {userData.age}</p>
+        </div>
+
+        <div className="userInfoAsset">
+          <MdOutlinePhonelinkLock />
+          <p>{userData.phoneNumber}</p>
+        </div>
+        <div>
+          <button className="signOutBtn" onClick={logout}>
+            <RiLogoutBoxRLine />
+          </button>
         </div>
       </div>
       <div className="totalPortfolio">
-        <p>Ընդհանուր Պորտֆոլիո - {price[0] * bonds || 0} դր.</p>
+        <p>Ընդհանուր Պորտֆոլիո - {price[0] * userData.bonds || 0} դր.</p>
         <a
           target="blank"
           href="https://wa.me/37444166620"

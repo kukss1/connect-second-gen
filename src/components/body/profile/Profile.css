@@ -45,14 +45,21 @@
     display: flex;
     justify-content: space-around;
     margin-top: 5vh;
+    background-color: rgb(59, 59, 59);
+    padding: 2vh 0;
+    box-shadow: inset 0 0 12px #000000;
 }
 .certificateImg ,.bondImg {
-    width: 30vw;
+    width: 300px;
 }
 .certificateWrapper , .totalBonds {
     color: #E2DFD2;
     text-align: center;
     font-size: 1.2rem;
+}
+.certificateWrapper p  , .totalBonds p{
+    border-bottom: 1px solid #E2DFD2;
+    padding: 1vh 0;
 }
 .totalPortfolio {
     color: #E2DFD2;
@@ -70,16 +77,41 @@
     margin-bottom: 2vh;
 }
 
+.loading {
+    width: 100vw;
+    height: 76vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loading_spinner {
+    width: 20vw;
+    height: 20vh;
+}
+
 @media (max-width: 600px) {
     .userInfo {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
     .userPortfolio {
-        flex-direction: column;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        border-radius: 5px;
+    }
+    .certificateWrapper , .totalBonds {
+        width: 100vw;
+        margin-left: 5vw;
     }
     .certificateImg ,.bondImg {
-        width: 50vw;
+        width: 300px;
+        height: 200px;
+    }
+    .bondImg {
+        margin-right: 5vw;
+    }
+    .totalBonds p {
+        margin-right: 3vh;
     }
     .totalPortfolio {
         flex-direction: column;
