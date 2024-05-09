@@ -11,3 +11,9 @@ body {
   }
 }
 
+:root {
+  --basics: #686a6c;
+  --accents:#79ADE0;
+  --headers:#2B3E50;
+  --texts:#ffffff;
+}

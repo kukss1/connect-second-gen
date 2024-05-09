@@ -10,7 +10,7 @@
 
 .main_right_nav a {
     font-size: 1.2rem;
-    color: white;
+    color: var(--texts);
     font-weight: 600;
     text-decoration: none;
     padding-top: 4vw;
@@ -21,14 +21,14 @@
     transform: rotate(-90deg);
     font-family: "Noto Serif Armenian", serif;
     font-weight: 100;
-    
+
 }
 
 .main_right_nav a:hover {
     transform: rotate(-90deg);
 }
 
-.main_right_nav:hover > a:not(:hover) {
+.main_right_nav:hover>a:not(:hover) {
     filter: blur(10px);
     transform: rotate(-90deg);
 }
@@ -36,9 +36,10 @@
 @media (hover:hover) {
     .main_right_nav a:hover {
         transform: rotate(-90deg) scale(1.1);
+        color: var(--accents);
     }
-    
-    .main_right_nav:hover > a:not(:hover) {
+
+    .main_right_nav:hover>a:not(:hover) {
         filter: blur(10px);
         transform: rotate(-90deg);
     }
@@ -46,10 +47,10 @@
 
 @media (hover:none) {
     .main_right_nav a:active {
-        transform: rotate(-90deg) ;
+        transform: rotate(-90deg);
     }
-    
-    .main_right_nav:active > a:not(:active) {
+
+    .main_right_nav:active>a:not(:active) {
         filter: blur(10px);
         transform: rotate(-90deg) scale(0.9);
     }

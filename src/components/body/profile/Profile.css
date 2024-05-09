@@ -6,9 +6,11 @@
 
 .userHeader {
     text-align: center;
-    color: gray;
+    color: var(--basics);
     font-family: "Noto Serif Armenian", serif;
     font-weight: 400;
+    border-top: 1px solid var(--headers);
+    margin: 0;
 }
 
 .userInfo {
@@ -16,7 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    color: #E2DFD2;
+    color: var(--basics);
     font-family: "Noto Serif Armenian", serif;
     font-weight: 200;
 }
@@ -37,43 +39,42 @@
     cursor: pointer;
 }
 .signOutBtn svg {
-    color: rgba(167,141,88,0.5);
+    color: var(--accents);
     font-size: 2rem;
 }
 
 .userPortfolio {
     display: flex;
     justify-content: space-around;
-    margin-top: 5vh;
-    background-color: rgb(59, 59, 59);
+    background-color: black;
     padding: 2vh 0;
-    box-shadow: inset 0 0 12px #000000;
+    box-shadow: inset 0 0 320px var(--basics);
 }
 .certificateImg ,.bondImg {
     width: 300px;
 }
 .certificateWrapper , .totalBonds {
-    color: #E2DFD2;
+    color: var(--accents);
     text-align: center;
     font-size: 1.2rem;
 }
 .certificateWrapper p  , .totalBonds p{
-    border-bottom: 1px solid #E2DFD2;
+    border-bottom: 1px solid var(--accents);
     padding: 1vh 0;
 }
 .totalPortfolio {
-    color: #E2DFD2;
+    color: var(--basics);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top: 2px solid gray;
+    border-top: 2px solid var(--headers);
     font-family: "Noto Serif Armenian", serif;
     font-weight: 300;
     font-size: 1.2rem;
 }
 .totalPortfolio > a{
     text-decoration: none;
-    color: rgba(167,141,88,0.5);
+    color: var(--accents);
     margin-bottom: 2vh;
 }
 

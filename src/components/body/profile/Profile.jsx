@@ -59,7 +59,6 @@ const Profile = () => {
 
   return (
     <div className="profileWrapper">
-      <h1 className="userHeader">Անձնական էջ</h1>
       <div className="userPortfolio">
         <div className="certificateWrapper">
           <img
@@ -74,12 +73,14 @@ const Profile = () => {
           <p>Bonds: {userData.bonds}</p>
         </div>
       </div>
+      <h1 className="userHeader">Անձնական էջ</h1>
       <div className="userInfo">
         <div className="userInfoAsset">
           <MdOutlineContactPage />
           <p>{userData.firstName}</p>
           <p> {userData.lastName}</p>
         </div>
+
         <div className="userInfoAsset">
           <TbRating18Plus />
           <p> {userData.age}</p>

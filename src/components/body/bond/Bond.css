@@ -5,7 +5,7 @@
 }
 .bonds_empty {
     width: 8.9vw;
-    border-right: 1px solid gray;
+    border-right: 1px solid var(--headers);
 }
 .bond_images {
     display: flex;
@@ -17,7 +17,7 @@
 }
 
 .bond_wrapper h3 {
-    color: #686a6c;
+    color: var(--basics);
     font-size: 3rem;
     font-family: 'Nixie One', system-ui;
 }
@@ -25,7 +25,7 @@
     display: block;
     color: white;
     font-size: 1.2rem;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--headers);
     padding: 1vh;
 
 }
@@ -46,23 +46,23 @@
 
 .line {
     width: 100%;
-    border-top:1px dashed grey;
+    border-top:1px dashed var(--headers);
 }
 .vertical_line {
     height: 100%;
-    border-left: 1px dashed grey;
+    border-left: 1px dashed var(--headers);
 }
 
 .bond_image {
     width: 20vw;
-    box-shadow: 3px 2px 5px gray;
+    box-shadow: 3px 2px 5px var(--headers);
     border-radius: 10px;
     
 }
 
 .bonds_nav {
     width: 7.8vw;
-    border-left: 1px solid gray;
+    border-left: 1px solid var(--headers);
 }
 
 
@@ -73,7 +73,7 @@
   }
   
   .bond_image:hover {
-    filter:drop-shadow(5px 5px 10px gray) ; 
+    filter:drop-shadow(5px 5px 10px var(--headers)) ; 
     transition: 0.3s;
 
   }

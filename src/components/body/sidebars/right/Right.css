@@ -9,12 +9,12 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    border-right: 1px solid grey;
+    border-right: 1px solid var(--headers);
     margin-left: 0.1vw;
 }
 
 .main_right_title , .main_right_subtitle {
-    color: gray;
+    color: var(--basics);
 }
 
 .main_right_text {
@@ -39,12 +39,12 @@
 
 .more {
     padding: 1.5vh 4vw;
-    color: white;
+    color: var(--headers);
     text-decoration: none;
     font-family: "Noto Serif Armenian", serif;
     font-size: 1.3rem;
-    font-weight: 200;
-    background-color: rgba(167,141,88,0.5);
+    font-weight: 600;
+    background-color: var(--accents);
     border-radius: 20px;
     margin-right: 5vw;
     margin-top: 5vh;

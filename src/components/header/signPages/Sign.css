@@ -1,4 +1,5 @@
-.loginWrapper , .register_wrapper {
+.loginWrapper,
+.register_wrapper {
     width: 100vw;
     height: 76vh;
     display: flex;
@@ -6,61 +7,74 @@
     align-items: center;
     justify-content: center;
 }
-.loginHeader  , .registerWrapper{
-    color: gray;
+
+.loginHeader,
+.registerWrapper {
+    color: var(--basics);
     font-family: "Noto Serif Armenian", serif;
     font-weight: 300;
     font-size: 2.5rem;
 }
+
 .loginInputs {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid grey;
+    border: 1px solid var(--headers);
     padding: 5vh 5vw;
 }
+
 .regInputs {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid grey;
+    border: 1px solid var(--headers);
     padding: 5vh 5vw;
 }
-.loginInputs input,.regInputs input {
+
+.loginInputs input,
+.regInputs input {
     padding: 1.2vh 2vw;
     margin: 5px;
     font-size: 1rem;
-    border: 2px solid grey;
+    border: 2px solid var(--headers);
     color: white;
     background: none;
     border-radius: 4px;
     outline: none;
     transition: border-color 0.3s;
 }
-.loginInputs input:focus ,.regInputs input:focus{
-        border-color: #007bff;
+
+.loginInputs input:focus,
+.regInputs input:focus {
+    border-color: var(--accents);
 }
-.loginInputs input:not(:placeholder-shown) + label, .regInputs input:not(:placeholder-shown) + label{
+
+.loginInputs input:not(:placeholder-shown)+label,
+.regInputs input:not(:placeholder-shown)+label {
     transform: translateY(-20px);
     font-size: 12px;
-    color: #007bff;
+    color: var(--accents);
 }
+
 .inputLabel {
-    color: grey;
+    color: var(--basics);
     font-family: "Noto Serif Armenian", serif;
 }
+
 .loginBtn {
     padding: 1.5vh 6vw;
     font-family: "Noto Serif Armenian", serif;
-    background-color:  rgba(167,141,88,0.5);
+    background-color: var(--accents);
     border: none;
-    color: white;
+    color: var(--headers);
     border-radius: 14px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 .loginBtn:active {
-    background-color: rgba(167,141,88,0.8);
+    background-color: var(--basics);
 }
 
 .errorMessage {
@@ -69,7 +83,9 @@
 
 
 @media (max-height: 768px) {
-    .loginWrapper , .register_wrapper {
+
+    .loginWrapper,
+    .register_wrapper {
         overflow-y: scroll;
     }
 }

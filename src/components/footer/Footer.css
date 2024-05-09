@@ -2,7 +2,7 @@
     display: flex;
     width: 100vw;
     height: 12vh;
-    border-top: 1px solid grey;
+    border-top: 1px solid var(--headers);
 }
 
 .footer_empty {
@@ -11,25 +11,25 @@
     justify-content: center;
     width: 8vw;
     height: 12vh;
-    border-right: 1px solid grey;
+    border-right: 1px solid var(--headers);
 }
 
 .footer_empty h3 {
-    color: white;
+    color: var(--accents);
     font-size: 1.6rem
 }
 
 .footer_body {
     width: 34vw;
     height: 12vh;
-    border-right: 1px solid gray;
+    border-right: 1px solid var(--headers);
     overflow-x: scroll;
 }
 
 .footer_body_second {
     width: 42vw;
     height: 12vh;
-    border-right: 1px solid gray;
+    border-right: 1px solid var(--headers);
 }
 
 .about_years {
@@ -51,7 +51,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid gray;
+    border: 1px solid var(--headers);
     border-radius: 20px;
     margin-top: 1.2vh;
     margin-bottom: 0.5vh;
@@ -62,7 +62,7 @@
     font-size: 1.5rem;
     margin-bottom: 0;
     margin-top: 1.2vh;
-    color: gray;
+    color: var(--headers);
 }
 
 .year p {
@@ -74,7 +74,7 @@
 }
 
 .about_years svg {
-    color: white;
+    color: var(--accents);
     font-size: 3rem;
     margin-left: 2vw;
     margin-right: 2vw;
@@ -94,7 +94,7 @@
 }
 
 .tel_header {
-    color: gray;
+    color: var(--basics);
     font-size: 1.5rem;
     margin-left: 2vw;
 }

@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border-right: 1px solid grey;
+    border-right: 1px solid var(--headers);
     margin-left: 0.1vw;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .idea h1 {
-    color: gray;
+    color: var(--basics);
     font-family: "Protest Strike", sans-serif;
   font-weight: 600;
   font-size: 2.5rem;
@@ -41,13 +41,13 @@
 }
 
 .about_body a {
-    color: white;
+    color: var(--headers);
     text-decoration: none;
     font-size: 1.1rem;
     padding: 0.8vw 0.8vh;
     font-family: "Noto Serif Armenian", serif;
     font-weight: 300;
-    background-color: rgba(167,141,88,0.5);
+    background-color: var(--accents);
     border-radius: 20px;
     margin-bottom: 1vh;
 }
